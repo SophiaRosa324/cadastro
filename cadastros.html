@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.O.G.U.E Files</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="logos.png"/>
+</head>
+<body >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            
+            <a class="navbar-brand" href="#">R.O.G.U.E Files</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color: white;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <li class="nav-item">
+                        <a class="nav-link" href="#signup">Registro</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="historico.html">Cadastros</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+    <!-- Content -->
+    <div class="container">
+        <div class="file-container">
+            <h1 class="text-center my-4">R.O.G.U.E Files</h1>
+            <!-- Stats Section -->
+            <div id="Status" class="row">
+                <div class="col-md-6">
+                    <div class="Status">
+                        <div class="section-title">Status</div>
+                        <p><strong>Força:</strong> <span id="strength-display">12/12</span></p>
+                        <p><strong>Agilidade:</strong> <span id="agility-display">12/12</span></p>
+                        <p><strong>Resistência:</strong> <span id="endurance-display">12/12</span></p>
+                        <p><strong>inteligência:</strong> <span id="intelligence-display">12/12</span></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                     
+    
+                    <div class="imagens">  
+                        <img id="image1" class="active" src="#" alt="Imagem">  
+                         
+                    </div>  
+                    
+                    
+
+                </div>
+            </div>
+
+            <!-- Details Section -->
+            <div id="detalhes" class="row mt-4">
+                <div class="col-md-6">
+                    <div class="detalhes">
+                        <div class="section-title">Detalhes</div>
+                        <p><strong>Nome:</strong> <span id="name-display">seu nome</span></p>
+                        <p><strong>Codinome:</strong> <span id="hero-name-display">codinome</span></p>
+                        <p><strong>Idade:</strong> <span id="age-display">idade</span></p>
+                        <p><strong>Afiliação:</strong> <span id="affiliation-display"></span></p>
+                        
+                        <p><strong>habilidades:</strong> <span id="abilities-display">12/12</span></p>
+                        <p><strong>Descrição:</strong> <span id="Notes-display">....</span></p>    
+                    </div>
+                </div> 
+            </div>
+
+            <!-- Notes Section -->
+                    
+                    
+        </div>
+            <div id="signup" class="row mt-4">
+                <div class="col">
+                    <div class="signup-box">
+                        <div class="section-title">Atualizar Informações</div>
+                        <form id="updateForm">
+                            <div class="mb-3">
+                                <label for="Força" class="form-label">Força</label>
+                                <input type="number" class="form-control" id="Força" value="12">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Agilidade" class="form-label">Agilidade</label>
+                                <input type="number" class="form-control" id="Agilidade" value="12">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Resistência" class="form-label">Resistência</label>
+                                <input type="number" class="form-control" id="Resistência" value="12">
+                            </div>
+                            <div class="mb-3">
+                                <label for="inteligência" class="form-label">inteligência</label>
+                                <input type="number" class="form-control" id="inteligência" value="12">
+                            </div>
+        
+                            <div class="mb-3">
+                                <label for="Nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="Nome" placeholder="Seu nome completo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Codinome" class="form-label">Codinome</label>
+                                <input type="text" class="form-control" id="Codinome" placeholder="Codinome/apelido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Idade" class="form-label">Idade</label>
+                                <input type="number" class="form-control" id="Idade" placeholder="Adicionar idade">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Afiliação" class="form-label">Afiliação</label>
+                                <input type="text" class="form-control" id="Afiliação" placeholder="clã, grupo, etc..">
+                            </div>
+                            <div class="mb-3">
+                                <label for="habilidades" class="form-label">habilidades</label>
+                                <input type="text" class="form-control" id="habilidades" placeholder="Adicionar habilidades">
+                            </div>
+                            <div class="mb-3">
+                                <label for="descrição" class="form-label">Descrição / Atributos especiais</label>
+                                <input type="text" class="form-control" id="descrição" placeholder="Adicionar Descrição">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Atualizar</button>
+                            <input type="file" id="fileInput" accept="image/*" multiple>  (sua imagem)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- JavaScript to handle form submission and update content -->
+        <script>
+        document.getElementById("updateForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+        
+            // Update stats
+            document.getElementById("strength-display").textContent = document.getElementById("Força").value + "/12";
+            document.getElementById("agility-display").textContent = document.getElementById("Agilidade").value + "/12";
+            document.getElementById("endurance-display").textContent = document.getElementById("Resistência").value + "/12";
+            document.getElementById("intelligence-display").textContent = document.getElementById("inteligência").value + "/12";
+        
+            // Update details
+            document.getElementById("name-display").textContent = document.getElementById("Nome").value;
+            document.getElementById("hero-name-display").textContent = document.getElementById("Codinome").value;
+            document.getElementById("age-display").textContent = document.getElementById("Idade").value;
+            document.getElementById("affiliation-display").textContent = document.getElementById("Afiliação").value;
+        
+            // Update abilities
+            document.getElementById("abilities-display").textContent = document.getElementById("habilidades").value;
+            
+        
+            // Update notes
+            document.getElementById("Notes-display").textContent = document.getElementById("descrição").value;
+
+            // Objeto com dados para o formulário
+            const perfil = {
+                nome: document.getElementById("Nome").value,
+                codinome: document.getElementById("Codinome").value,
+                idade: document.getElementById("Idade").value,
+                afiliação: document.getElementById("Afiliação").value,
+                descrição: document.getElementById("descrição").value,
+                atributos: {
+                    força: document.getElementById("Força").value,
+                    agilidade: document.getElementById("Agilidade").value,
+                    resistência: document.getElementById("Resistência").value,
+                    inteligência: document.getElementById("inteligência").value,
+                    habilidade: document.getElementById("habilidades").value,
+                }
+            };
+
+
+            // Recuperação de perfis já existentes no localStorage
+            let perfis = JSON.parse(localStorage.getItem("perfis")) || [];
+
+
+            // Push para criar um novo perfil
+            perfis.push(perfil);
+
+
+            // Salvamento no localStorage
+            localStorage.setItem("perfis", JSON.stringify(perfis));
+
+            // Redirecionamento
+            window.location.href = 'historico.html';
+
+            
+
+        });
+        </script>
+
+        <script>
+            const fileInput = document.getElementById('fileInput');  
+            const images = document.querySelectorAll('.imagens img');  
+            let currentIndex = 0;  
+            let loadedImages = []; // Array para armazenar as imagens carregadas  
+
+        // Função para mostrar a imagem ativa no carrossel  
+        function showImage(index) {  
+            images.forEach((img, i) => {  
+                img.classList.remove('active');  
+                if (i === index) {  
+                    img.classList.add('active');  
+                }  
+            });  
+        }  
+
+        fileInput.addEventListener('change', function() {  
+            const files = Array.from(fileInput.files);  
+            loadedImages = []; // Limpar imagens carregadas ao fazer novo upload  
+            
+            images.forEach(img => {  
+                img.style.display = 'none'; // Esconder todas as imagens  
+                img.src = ""; // Limpar a fonte das imagens  
+            });  
+
+            files.forEach((file, index) => {  
+                if (index < images.length) { // Limitar o número de imagens exibidas  
+                    const reader = new FileReader();  
+                    reader.onload = function(e) {  
+                        images[index].src = e.target.result; // Definir a imagem  
+                        images[index].style.display = 'block'; // Exibir a imagem  
+                        loadedImages.push(index);  // Adicionar o índice da imagem carregada  
+                    }  
+                    reader.readAsDataURL(file);  
+                }  
+            });  
+
+            currentIndex = 0; // Reiniciar o índice  
+            showImage(currentIndex); // Mostrar a primeira imagem  
+        });  
+
+        
+        </script>
+            
+           
+</body>
+</html>
