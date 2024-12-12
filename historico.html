@@ -15,6 +15,7 @@
      <!-- Navbar -->
      <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
+            
             <a class="navbar-brand" href="#">R.O.G.U.E Files</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="color: white;"></span>
@@ -22,14 +23,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
+                        <li class="nav-item">
                         <a class="nav-link" href="cadastros.html">Registro</a>
                     </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="historico.html">Cadastros</a>
                     </li>
+
+
                 </ul>
             </div>
         </div>
@@ -38,27 +44,37 @@
     <div class="container">
         <div class="file-container">
             <!-- Apresentação de dados -->
+            
         </div>
     </div>
+  
 
      <!-- Bootstrap JS -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
+
      <script>
-        // Recuperação de perfis no localStorage
+
+    
+        // Recuperação de perfis no localStorage -__- S.O.S pfvr
         const perfis = JSON.parse(localStorage.getItem("perfis")) || [];
+
 
         // Elemento para exibir os perfis criados
         const container = document.querySelector(".file-container");
 
+
+
         // Limpeza do container antes de inserir dados
-        container.innerHTML = `<h4>--------Registro de Perfis--------</h4>`;
+        container.innerHTML = <h4>--------Registro de Perfis--------</h4>;
+
+
 
         // Comando para juntar os dados e criar elementos para exibição deles
         perfis.forEach((perfil, index) => {
             const perfilDiv = document.createElement("div");
             perfilDiv.className = "perfil";
-            perfilDiv.innerHTML = `
+            perfilDiv.innerHTML = 
             <hr>
             <p><strong>Perfil ${index + 1}</strong></p>
             <p>Nome: ${perfil.nome}</p>
@@ -68,31 +84,57 @@
             <p>Descrição: ${perfil.descrição}</p>
             <p>Atributos:</p>
             <ul>
-                <li>Força: ${perfil.atributos.forca}/12</li>
+                <li>Força: ${perfil.atributos.Força}/12</li>
                 <li>Agilidade: ${perfil.atributos.agilidade}/12</li>
                 <li>Resistência: ${perfil.atributos.resistência}/12</li>
                 <li>Inteligência: ${perfil.atributos.inteligência}/12</li>
                 <li>Habilidades: ${perfil.atributos.habilidade}</li>
             </ul>
-            `;
+            
             container.appendChild(perfilDiv);
         });
 
-        // Recuperação da imagem do localStorage
-        const uploadedImage = localStorage.getItem('uploadedImage');
-        if (uploadedImage) {
-            // Criação do elemento <img> para exibir a imagem
-            const imgElement = document.createElement('img');
-            imgElement.src = uploadedImage;
-            imgElement.alt = 'Imagem do Usuário';
-            imgElement.style.width = '150px'; // Ajuste o tamanho da imagem conforme necessário
-            imgElement.style.borderRadius = '8px';
-            imgElement.style.marginTop = '20px';
 
-            // Adicionando a imagem no container
-            container.innerHTML += '<h4>Imagem do Usuário:</h4>';
-            container.appendChild(imgElement);
-        }
+
+/*
+        const nome = localStorage.getItem('nome');
+        window.document.getElementById('name').innerText = nome ? Nome: ${nome} : 'Nenhum dado encontrado';
+
+        const idade = localStorage.getItem('idade');
+        window.document.getElementById('idade').innerText = idade ? idade: ${idade} : 'Nenhum dado encontrado';
+
+        const codinome = localStorage.getItem('codinome');
+        window.document.getElementById('codinome').innerText = codinome ? Codinome: ${codinome} : 'Nenhum dado encontrado';
+
+        const descrição = localStorage.getItem('descrição');
+        window.document.getElementById('descrição').innerText = descrição ? Descrição: ${descrição} : 'Nenhum dado encontrado';
+
+        const afiliação = localStorage.getItem('afiliação');
+        window.document.getElementById('afiliação').innerText = afiliação ? Afiliação: ${afiliação} : 'Nenhum dado encontrado';
+
+
+
+
+        const força = localStorage.getItem('força');
+        window.document.getElementById('força').innerText = força ? força: ${força}/12 : 'Nenhum dado encontrado';
+
+        const agilidade = localStorage.getItem('agilidade');
+        window.document.getElementById('agilidade').innerText = agilidade ? agilidade: ${agilidade}/12 : 'Nenhum dado encontrado';
+
+        const inteligência = localStorage.getItem('inteligência');
+        window.document.getElementById('inteligência').innerText = inteligência ? inteligência: ${inteligência}/12 : 'Nenhum dado encontrado';
+        const resistência = localStorage.getItem('resistência');
+        window.document.getElementById('resistência').innerText = resistência ? resistência: ${resistência}/12 : 'Nenhum dado encontrado';
+        const habilidades = localStorage.getItem('habilidades');
+        window.document.getElementById('habilidades').innerText = habilidades ? habilidades: ${habilidades} : 'Nenhum dado encontrado';
+
+*/
+    // Recuperação da imagem do localStorage
+ 
+
+
+
+    window.document.get
      </script>
 </body>
 </html>
