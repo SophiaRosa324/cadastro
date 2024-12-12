@@ -129,6 +129,21 @@
         window.document.getElementById('habilidades').innerText = habilidades ? `habilidades: ${habilidades}` : 'Nenhum dado encontrado';
 
 */
+    // Recuperação da imagem do localStorage
+    const uploadedImage = localStorage.getItem('uploadedImage');
+    if (uploadedImage) {
+        // Criação do elemento <img> para exibir a imagem
+        const imgElement = document.createElement('img');
+        imgElement.src = uploadedImage;
+        imgElement.alt = 'Imagem do Usuário';
+        imgElement.style.width = '150px'; // Ajuste o tamanho da imagem conforme necessário
+        imgElement.style.borderRadius = '8px';
+        
+        // Adicionando a imagem no container
+        container.innerHTML += '<h4>Imagem do Usuário:</h4>';
+        container.appendChild(imgElement);
+    }
+
 
 
     window.document.get
