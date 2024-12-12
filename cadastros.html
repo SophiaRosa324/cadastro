@@ -207,51 +207,22 @@
 
         });
         </script>
-
-        <script>
-            const fileInput = document.getElementById('fileInput');  
-            const images = document.querySelectorAll('.imagens img');  
-            let currentIndex = 0;  
-            let loadedImages = []; // Array para armazenar as imagens carregadas  
-
-        // Função para mostrar a imagem ativa no carrossel  
-        function showImage(index) {  
-            images.forEach((img, i) => {  
-                img.classList.remove('active');  
-                if (i === index) {  
-                    img.classList.add('active');  
-                }  
-            });  
-        }  
-
-        fileInput.addEventListener('change', function() {  
-            const files = Array.from(fileInput.files);  
-            loadedImages = []; // Limpar imagens carregadas ao fazer novo upload  
-            
-            images.forEach(img => {  
-                img.style.display = 'none'; // Esconder todas as imagens  
-                img.src = ""; // Limpar a fonte das imagens  
-            });  
-
-            files.forEach((file, index) => {  
-                if (index < images.length) { // Limitar o número de imagens exibidas  
-                    const reader = new FileReader();  
-                    reader.onload = function(e) {  
-                        images[index].src = e.target.result; // Definir a imagem  
-                        images[index].style.display = 'block'; // Exibir a imagem  
-                        loadedImages.push(index);  // Adicionar o índice da imagem carregada  
-                    }  
-                    reader.readAsDataURL(file);  
-                }  
-            });  
-
-            currentIndex = 0; // Reiniciar o índice  
-            showImage(currentIndex); // Mostrar a primeira imagem  
-        });  
-
-        
-        </script>
-            
+   <script>
+     document.getElementById('saveButton').addEventListener('click', () => {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    // Armazenar a imagem em base64 no localStorage
+                    localStorage.setItem('uploadedImage', reader.result);
+                    alert('Imagem salva com sucesso!');
+                };
+                reader.readAsDataURL(file);
+                      } 
+            }
+        });
+    </script>
            
 </body>
 </html>
