@@ -66,7 +66,7 @@
 
 
         // Limpeza do container antes de inserir dados
-        container.innerHTML = <h4>--------Registro de Perfis--------</h4>;
+        container.innerHTML = `<h4>--------Registro de Perfis--------</h4>`;
 
 
 
@@ -74,7 +74,7 @@
         perfis.forEach((perfil, index) => {
             const perfilDiv = document.createElement("div");
             perfilDiv.className = "perfil";
-            perfilDiv.innerHTML = 
+            perfilDiv.innerHTML = `
             <hr>
             <p><strong>Perfil ${index + 1}</strong></p>
             <p>Nome: ${perfil.nome}</p>
@@ -84,13 +84,13 @@
             <p>Descrição: ${perfil.descrição}</p>
             <p>Atributos:</p>
             <ul>
-                <li>Força: ${perfil.atributos.Força}/12</li>
+                <li>Força: ${perfil.atributos.forca}/12</li>
                 <li>Agilidade: ${perfil.atributos.agilidade}/12</li>
                 <li>Resistência: ${perfil.atributos.resistência}/12</li>
                 <li>Inteligência: ${perfil.atributos.inteligência}/12</li>
                 <li>Habilidades: ${perfil.atributos.habilidade}</li>
             </ul>
-            
+            `
             container.appendChild(perfilDiv);
         });
 
@@ -98,44 +98,40 @@
 
 /*
         const nome = localStorage.getItem('nome');
-        window.document.getElementById('name').innerText = nome ? Nome: ${nome} : 'Nenhum dado encontrado';
+        window.document.getElementById('name').innerText = nome ? `Nome: ${nome}` : 'Nenhum dado encontrado';
 
         const idade = localStorage.getItem('idade');
-        window.document.getElementById('idade').innerText = idade ? idade: ${idade} : 'Nenhum dado encontrado';
+        window.document.getElementById('idade').innerText = idade ? `idade: ${idade}` : 'Nenhum dado encontrado';
 
         const codinome = localStorage.getItem('codinome');
-        window.document.getElementById('codinome').innerText = codinome ? Codinome: ${codinome} : 'Nenhum dado encontrado';
+        window.document.getElementById('codinome').innerText = codinome ? `Codinome: ${codinome}` : 'Nenhum dado encontrado';
 
         const descrição = localStorage.getItem('descrição');
-        window.document.getElementById('descrição').innerText = descrição ? Descrição: ${descrição} : 'Nenhum dado encontrado';
+        window.document.getElementById('descrição').innerText = descrição ? `Descrição: ${descrição}` : 'Nenhum dado encontrado';
 
         const afiliação = localStorage.getItem('afiliação');
-        window.document.getElementById('afiliação').innerText = afiliação ? Afiliação: ${afiliação} : 'Nenhum dado encontrado';
+        window.document.getElementById('afiliação').innerText = afiliação ? `Afiliação: ${afiliação}` : 'Nenhum dado encontrado';
 
 
 
 
         const força = localStorage.getItem('força');
-        window.document.getElementById('força').innerText = força ? força: ${força}/12 : 'Nenhum dado encontrado';
+        window.document.getElementById('força').innerText = força ? `força: ${força}/12` : 'Nenhum dado encontrado';
 
         const agilidade = localStorage.getItem('agilidade');
-        window.document.getElementById('agilidade').innerText = agilidade ? agilidade: ${agilidade}/12 : 'Nenhum dado encontrado';
+        window.document.getElementById('agilidade').innerText = agilidade ? `agilidade: ${agilidade}/12` : 'Nenhum dado encontrado';
 
         const inteligência = localStorage.getItem('inteligência');
-        window.document.getElementById('inteligência').innerText = inteligência ? inteligência: ${inteligência}/12 : 'Nenhum dado encontrado';
+        window.document.getElementById('inteligência').innerText = inteligência ? `inteligência: ${inteligência}/12` : 'Nenhum dado encontrado';
         const resistência = localStorage.getItem('resistência');
-        window.document.getElementById('resistência').innerText = resistência ? resistência: ${resistência}/12 : 'Nenhum dado encontrado';
+        window.document.getElementById('resistência').innerText = resistência ? `resistência: ${resistência}/12` : 'Nenhum dado encontrado';
         const habilidades = localStorage.getItem('habilidades');
-        window.document.getElementById('habilidades').innerText = habilidades ? habilidades: ${habilidades} : 'Nenhum dado encontrado';
+        window.document.getElementById('habilidades').innerText = habilidades ? `habilidades: ${habilidades}` : 'Nenhum dado encontrado';
 
 */
-    
- 
-
 
 
     window.document.get
-         });
      </script>
 </body>
 </html>
