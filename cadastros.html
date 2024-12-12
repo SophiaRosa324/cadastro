@@ -202,13 +202,8 @@
 
             // Redirecionamento
             window.location.href = 'historico.html';
-
             
-
-        });
-        </script>
-   <script>
-     document.getElementById('updateForm').addEventListener('click', () => {
+            document.getElementById('updateForm').addEventListener('click', () => {
             const fileInput = document.getElementById('fileInput');
             const file = fileInput.files[0];
             if (file) {
@@ -221,8 +216,14 @@
                 reader.readAsDataURL(file);
                       } 
             }
+            
+
         });
-    </script>
+        </script>
+   
+   
+       
+   
            
 </body>
 </html>
